@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">img
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- ********************************************SECOND SECTION*********************************************************************** -->
+    <div class="firstpage">
+        <div class="firstsection">
+            <h5>We're donating $10 to the National Park Foundation for every purchase <br>made at Apple using Apple Pay
+                through
+                8/27. <a href="">Shop now ></a></h5>
+        </div>
+        <!-- ***************************************************FIRST PAGE********************************************************************** -->
+        <div class="secondsection">
+            <h1>Save on Mac or iPad <br>for college</h1>
+            <h3>Plus get a gift card upto $150.</h3>
+            <a href="">Shop now ></a>
+            <div class="video">
+                <video id="video" src="./assessts/videos/firstpage/Apple.mp4" autoplay muted>
+
+                </video>
+            </div>
+            <script>
+                const video = document.getElementById("video");
+                const container = document.querySelector(".video");
+
+                video.addEventListener("loadedmetadata", () => {
+                    const videoWidth = video.videoWidth;
+                    const videoHeight = video.videoHeight;
+                    const containerWidth = container.offsetWidth;
+                    const containerHeight = container.offsetHeight;
+
+                    const widthRatio = containerWidth / videoWidth;
+                    const heightRatio = containerHeight / videoHeight;
+
+                    const scale = Math.max(widthRatio, heightRatio);
+
+                    const scaledWidth = videoWidth * scale;
+                    const scaledHeight = videoHeight * scale;
+
+                    const xOffset = (scaledWidth - containerWidth) / 2;
+                    const yOffset = (scaledHeight - containerHeight) / 2;
+
+                    video.style.width = scaledWidth + "px";
+                    video.style.height = scaledHeight + "px";
+                    video.style.transform = `translate(-${xOffset}px, -${yOffset}px)`;
+                });
+
+            </script>
+        </div>
+    </div>
+    <!-- *******************************************************SECOND PAGE************************************************************************** -->
+    <div class="secondpage">
+        <div class="text2">
+            <h1>MacBook Air 15''</h1>
+            <h3>Impressively big. Impossibly thin.</h3>
+        </div>
+        <a href="">Learn more ></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Buy ></a>
+        <!-- <img src="" alt=""> -->
+    </div>
+    <!-- *********************************************************THIRD PAGE******************************************************************************* -->
+    <div class="thirdpage">
+        <div class="text3">
+            <h1>iPhone 14</h1>
+            <h3>Wonderfull.</h3>
+            <a href="">Learn more ></a><a href="">Buy ></a>
+        </div>
+        <!-- <img src="" alt=""> -->
+    </div>
+    <!-- ****************************************************************FOURTH PAGE***************************************************************************** -->
+    <div class="section">
+        <div class="sectiona">
+            <div class="section1">
+                <h1>iPhone 14 Pro</h1>
+                <h3>Pro. Beyond.</h3>
+                <a href="">Learn more ></a><a href="">Buy ></a>
+
+                <!-- <img src="./assessts/images/fourthpage/1.jpg" alt=""> -->
+            </div>
+
+            <div class="section2">
+                <h1>iPad Pro</h1>
+                <h3>Supercharged by</h3><img src="" alt="">
+                <a href="">Learn more ></a><a href="">Buy ></a>
+                <!-- <img src="./assessts/images/fourthpage/2.jpg" alt=""> -->
+            </div>
+        </div>
+        <div class="sectionb">
+            <div class="section3">
+                <img src="" alt="">
+                <h1>WATCH</h1>
+                <p>SERIES 8</p>
+                <h3>A Healthy leap ahead</h3>
+                <a href="">Learn more ></a><a href="">Buy ></a>
+                <!-- <img src="./assessts/images/fourthpage/3.jpg" alt=""> -->
+            </div>
+
+            <div class="section4">
+                <div class="t4">
+                    <h1>Vision Pro</h1>
+                    <p>SERIES 8</p>
+                    <h3>Welcome to the era of spatial computing.</h3>
+                    <p>Available early next year in the U.S.</p>
+                    <a href="">Learn more ></a>
+                </div>
+                <!-- <img src="./assessts/images/fourthpage/4.jpg" alt=""> -->
+            </div>
+        </div>
+        <div class="sectionc">
+            <div class="section5">
+                <div class="t5">
+                    <h1>Trade In</h1>
+
+                    <h3>Upgrade and save.It's that easy.</h3>
+                    <a href="">See what your device is worth ></a>
+                </div>
+                <!-- <img src="./assessts/images/fourthpage/5.jpg" alt=""> -->
+            </div>
+
+            <div class="section6">
+                <img src="" alt="">
+                <h1>Card</h1>
+
+                <h3>Get up to 3% Daily Cash back <br>with every purchase.</h3>
+                <a href="">Learn more ></a><a href="">Apply now ></a>
+
+                <!-- <img src="./assessts/images/fourthpage/6.jpg" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <!-- **************************************************SLIDER******************************************************************************************** -->
+
+
+
+
+
+
+
+    <!-- *****************************************************PARAGRAPH******************************************************************* -->
+    <div class="text">
+        <p>1. Through August 27, 2023, Apple will donate $10 for every purchase made in the U.S. using Apple Pay on
+            apple.com, through the Apple Store app, or at an Apple Store. Donations are limited to a maximum of one
+            million dollars ($1,000,000). The donation goes to the National Park Foundation. <br>
+            2. Qualified Purchasers receive an Apple Gift Card when they purchase an eligible Mac or iPad at a
+            Qualifying Location. Only one Apple Gift Card per eligible Mac or iPad per Qualified Purchaser. Offer
+            subject to availability. While supplies last. View full terms and conditions of offer here. <br>
+            Apple Vision Pro has not been authorized as required by the rules of the Federal Communications Commission.
+            This device is not, and may not be, offered for sale or lease, or sold or leased, until authorization is
+            obtained.<br>
+            Apple Vision Pro will be available early next year on apple.com and at Apple retail stores in the U.S.<br>
+            To access and use all Apple Card features and products available only to Apple Card users, you must add
+            Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple
+            Card is subject to credit approval, available only for qualifying applicants in the United States, and
+            issued by Goldman Sachs Bank USA, Salt Lake City Branch.<br>
+            If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about Apple
+            Card.<br>
+            Learn more about how Apple Card applications are evaluated at support.apple.com/kb/HT209218.<br>
+            A subscription is required for Apple TV+.<br>
+            Major League Baseball trademarks and copyrights are used with permission of MLB Advanced Media, L.P. All
+            rights reserved.<br></p>
+    </div>
+
+    <!-- *********************************************************FOOTER*********************************************************************** -->
+    <div class="footer">
+        <div class="footer1"></div>
+        <div class="footer2"></div>
+        <div class="footer3"></div>
+        <div class="footer4"></div>
+        <div class="footer5"></div>
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+
+</html>
